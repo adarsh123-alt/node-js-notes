@@ -1,0 +1,33 @@
+Event DRIVEN
+SINGLE THREADED
+V8 VS LIBUA 
+NODE RUNTIME EVENT LOOP 
+ASYNC CODE 
+BLOCKING CODE
+
+
+//Event Driven 
+req.on "data","end" 
+// ye event queue ke under jata hai jb bhi koi event hoga tb handler 
+// data aayega chunk ke form mein event ko listen liye jayega with help of req.on ke throw udko event queue ke under jayega  fir event loop ke passs jayega  fir even handler event handle karega
+
+// event loop single thread hai request and koi bhi kaam single thread use hota hai queue mein aayega  iske pass ek thread pools hota hai worker thread many thread unko kaam kar deta hai file system and database computaion fir se call kar dega ho jaya 
+
+// vs open source js engine haiuse chrome node js// high performance js
+libuv :
+multi platform support library form
+node js
+handle asynchronous i/o operations
+provide event driver architecture
+manages file system network timer non blocking
+
+
+Event loop :
+timer setTimeout() setInterval()
+first peroitity
+pending callback i/of 
+idle,prepare internal hai 
+poll timer wala bhi check karna 
+check invoked 
+close callback 
+

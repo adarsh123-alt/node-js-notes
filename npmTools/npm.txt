@@ -1,0 +1,6 @@
+-save-dev developement ke liye chiye not client side production mein nahi chiye tb -save-dev ka use
+-g global install karta hai
+
+-save-exact exact version install kar sakte hai
+
+-force  np ruk kar raha per aap ko karna hai wo kaam
